@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<head>
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Sensukho\AdminDashboard\Block\Adminhtml\Dashboard\Index" name="client.dashboard.index.container" template="Sensukho_AdminDashboard::dashboard/index.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

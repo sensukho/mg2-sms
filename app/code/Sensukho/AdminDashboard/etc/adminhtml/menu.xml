@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="Sensukho_AdminDashboard::dashboard"
+            title="Dashboard"
+            module="Sensukho_AdminDashboard"
+            sortOrder="10"
+            action="client/dashboard/index"
+            resource="Sensukho_AdminDashboard::dashboard"
+        />
+    </menu>
+</config>

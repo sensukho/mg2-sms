@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Sensukho_SKTheme::css/owl.carousel.css"/>
+        <css src="Sensukho_SKTheme::css/owl.theme.css"/>
+        <css src="Sensukho_SKTheme::css/owl.transitions.css"/>
+        <css src="Sensukho_SKTheme::css/fancybox/jquery.fancybox.css"/>
+        <css src="Sensukho_SKTheme::css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <referenceContainer name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="custom.css" template="Sensukho_SKTheme::customcss.phtml" before="-"/>
+        </referenceContainer>
+        <referenceContainer name="footer-container">
+            <block class="Magento\Framework\View\Element\Template" as="sktheme.footer" name="sktheme.footer" template="Sensukho_SKTheme::html/footer.phtml">
+                <block class="Magento\Framework\View\Element\Html\Links" name="footer_links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">footer links</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="html/copyright.phtml"/>
+            </block>
+            <referenceBlock name="report.bugs" remove="true"/>
+            <referenceBlock name="footer" remove="true"/>
+        </referenceContainer>
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Framework\View\Element\Template" as="sktheme.above" name="sktheme.above" template="Sensukho_SKTheme::skthemeabove.phtml" before="main.content" />
+            <block class="Magento\Framework\View\Element\Template" as="sktheme.below" name="sktheme.below" template="Sensukho_SKTheme::skthemebelow.phtml" after="main.content" />
+        </referenceContainer>
+        <referenceBlock name="wish-list-link" remove="true"/>
+    </body>
+</page>

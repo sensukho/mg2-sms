@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Sensukho_SKTheme::sktheme" title="SKTheme" module="Sensukho_SKTheme" sortOrder="65" resource="Sensukho_SKTheme::sktheme"/>
+        <add id="Sensukho_SKTheme::skthemesettings" title="Configuration" module="Sensukho_SKTheme" sortOrder="20" parent="Sensukho_SKTheme::sktheme" action="adminhtml/system_config/edit/section/skthemesettings" resource="Sensukho_SKTheme::sktheme"/>
+    </menu>
+</config>
