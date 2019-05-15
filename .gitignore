@@ -1,0 +1,14 @@
+/*
+!.gitignore
+!/app/
+/app/*
+# MODULES
+!/app/code/
+/app/code/*
+!/app/code/Sensukho
+# TEMPLATES
+!/app/design/
+/app/design/*
+!/app/design/frontend
+/app/design/frontend/*
+!/app/design/frontend/Sensukho
