@@ -12,3 +12,6 @@
 !/app/design/frontend
 /app/design/frontend/*
 !/app/design/frontend/Sensukho
+!/app/design/adminhtml/
+/app/design/adminhtml/*
+!/app/design/adminhtml/Sensukho
